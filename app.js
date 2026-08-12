@@ -45,7 +45,7 @@ function render() {
 			.forEach((task) => {
 				const card = document.createElement("div");
 				card.className = "card";
-				card.innerHTML = `
+				card.textContent = `
 					<h3>${task.title}</h3>
 					<div class="card-actions">
 						<button data-action="move" data-id="${task.id}" data-status="todo">Move → To Do</button>
